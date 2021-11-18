@@ -2,6 +2,7 @@
 #include <stdlib.h>
 
 void VanIsmetlodes(char karatkerlanc[]);
+void VeletlenKarakterLanc(char karakterek[], char Veletlenek[]);
 
 int main()
 {
@@ -14,6 +15,14 @@ int main()
     valos = rand() * (fh-ah) / RAND_MAX + ah
     */
 
+        char Veletlenek[11];
+    char ABC[] = {'a', 'b', 'c','d','e','f','g','h', 'i','j','k','l','m','n','h', 'y', 'z', '\0' } ;
+    VeletlenKarakterLanc(ABC, Veletlenek);
+
+    for(int i = 0; Veletlenek[i] != '\0'; i++){
+        printf("%c \n", Veletlenek[i]);
+    }
+    
     //srand(time(NULL));
     //rand() % (felsohatar-alsohatar) + alsohatar;
 
@@ -34,4 +43,22 @@ void VanIsmetlodes(char karakterlanc[])
     if (j == 1) printf("van ismetlodes");
     else printf("nincs ismetlodes");
 }
+void VeletlenKarakterLanc(char karakterek[], char veletlenek[]){
 
+    int mennyiveletlen = 1;
+    int Size = 0;
+    for(int i = 0; karakterek[i] != '\0'; i++){ Size++; }
+
+    for(int i = 0; karakterek[i] != '\0'; i++){
+        int Veletlenedik = rand() % (Size-1)  +0;
+        if(mennyiveletlen <= 10)
+        {
+            veletlenek[i] = karakterek[Veletlenedik];
+            mennyiveletlen++;
+        }
+    }
+    veletlenek[11] = '\0';
+
+
+    return;
+}
