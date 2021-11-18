@@ -18,8 +18,8 @@ int main()
     char keresett;  
     printf("Adjon meg egy karaktert: ");
     scanf("%c", &keresett);
-    printf("A keresett elem %d-szer fordul elo" ,(mennyivan(ABC , keresett)));
-
+    printf("A keresett elem %d-szer fordul elo" ,(mennyivan(Veletlenek , keresett)));
+    VanIsmetlodes(Veletlenek);
 }
 
 void VanIsmetlodes(char karakterlanc[])
