@@ -2,7 +2,6 @@
 #include <stdlib.h>
 
 void VanIsmetlodes(char karatkerlanc[]);
-int tombmeret(char karakterlanc[]);
 
 int main()
 {
