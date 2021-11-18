@@ -13,14 +13,6 @@ int main()
     for(int i = 0; Veletlenek[i] != '\0'; i++){
         printf("%c \n", Veletlenek[i]);
     }
-    
-    //srand(time(NULL));
-    //rand() % (felsohatar-alsohatar) + alsohatar;
-
-    //char turo[] = {'a','a','a','a','a','a','a','a','a','a','a','a','a','a','a','a','a','a','a','a','a','a','a','a','a','a','a','a','a','a','a','a'};
-    char turo[] = {'n','n','z','r','a','w','d','f','v','b','\0'};
-    VanIsmetlodes(turo);
-    if('p' == 'n') printf("a");
 
 }
 
