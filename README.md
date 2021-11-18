@@ -1,2 +1,3 @@
 # hullad-k
-hulladék
+csoportmunka be like
+39
