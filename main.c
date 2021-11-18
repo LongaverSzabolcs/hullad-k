@@ -8,6 +8,7 @@ int mennyivan (char tomb [], char keresett);
 
 int main()
 {
+        srand(time(NULL));
         char Veletlenek[11];
     char ABC[] = {'a', 'b', 'c','d','e','f','g','h', 'i','j','k','l','m','n','h', 'y', 'z', '\0' } ;
     VeletlenKarakterLanc(ABC, Veletlenek);
@@ -61,5 +62,5 @@ int mennyivan (char tomb [], char keresett)
            szamlalo++;
        }
     }
-    return szamlalo-39;
+    return szamlalo-11;
 }
