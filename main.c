@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 
 void VanIsmetlodes(char karatkerlanc[]);
 void VeletlenKarakterLanc(char karakterek[], char Veletlenek[]);
