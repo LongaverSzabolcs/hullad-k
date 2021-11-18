@@ -1,0 +1,2 @@
+# hullad-k
+hulladék
