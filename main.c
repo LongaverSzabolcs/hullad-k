@@ -6,15 +6,6 @@ void VeletlenKarakterLanc(char karakterek[], char Veletlenek[]);
 
 int main()
 {
-    /*
-    //random double szam tortrésszel
-    //iksz de
-    double valos;
-    double fh = 500; // felso hatar
-    double ah = 300; // also hatar
-    valos = rand() * (fh-ah) / RAND_MAX + ah
-    */
-
         char Veletlenek[11];
     char ABC[] = {'a', 'b', 'c','d','e','f','g','h', 'i','j','k','l','m','n','h', 'y', 'z', '\0' } ;
     VeletlenKarakterLanc(ABC, Veletlenek);
