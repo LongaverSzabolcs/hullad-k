@@ -8,7 +8,7 @@ int mennyivan (char tomb [], char keresett);
 
 int main()
 {
-        srand(time(NULL));
+    srand(time(NULL));
         char Veletlenek[11];
     char ABC[] = {'a', 'b', 'c','d','e','f','g','h', 'i','j','k','l','m','n','h', 'y', 'z', '\0' } ;
     VeletlenKarakterLanc(ABC, Veletlenek);
@@ -16,11 +16,12 @@ int main()
     for(int i = 0; Veletlenek[i] != '\0'; i++){
         printf("%c \n", Veletlenek[i]);
     }
-    char keresett;  
+    char keresett;
+        VanIsmetlodes(Veletlenek);
     printf("Adjon meg egy karaktert: ");
     scanf("%c", &keresett);
     printf("A keresett elem %d-szer fordul elo" ,(mennyivan(Veletlenek , keresett)));
-    VanIsmetlodes(Veletlenek);
+
 }
 
 void VanIsmetlodes(char karakterlanc[])
@@ -30,8 +31,8 @@ void VanIsmetlodes(char karakterlanc[])
     {
         if(karakterlanc[i]==karakterlanc[i-1]) j = 1;
     }
-    if (j == 1) printf("van ismetlodes");
-    else printf("nincs ismetlodes");
+    if (j == 1) printf("\nvan ismetlodes\n");
+    else printf("\nnincs ismetlodes\n");
 }
 void VeletlenKarakterLanc(char karakterek[], char veletlenek[]){
 
@@ -54,13 +55,14 @@ void VeletlenKarakterLanc(char karakterek[], char veletlenek[]){
 }
 int mennyivan (char tomb [], char keresett)
 {
-    int i, szamlalo;
-    for (i=0; i<strlen(tomb)-1;i++)
+    int i, szamlalo=0;
+    for (i=0; tomb[i] != '\0';i++)
     {
-       if (keresett==tomb[i] || tolower(keresett) == tomb[i])
+       if (tomb[i]==keresett)
        {
            szamlalo++;
        }
     }
-    return szamlalo-11;
+    return szamlalo;
 }
+
